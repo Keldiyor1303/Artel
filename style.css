@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(./rasmlar/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+nav p {
+    font-size: 18px;
+    color: white;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.til:nth-child(3) {
+    font-size: 14px;
+    color: black;
+    padding: 11px 7px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.til:nth-child(1), .til:nth-child(2) {
+    font-size: 14px;
+    padding: 11px 7px;
+    border-radius: 50%;
+    text-align: center; 
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bolim-1 {
+    width: 100%;
+    background-color: black;
+    padding: 80px;
+}
+
+.onas {
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.bolim-1 .box {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.bolim-1 .box div {
+    background: #15171B;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.bolim-1 .box div:nth-child(1) {
+    background: url(./rasmlar/background-1.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bolim-1 .box div:nth-child(1) img {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bolim-1 .box div .son {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: right;
+    color: #00D162;
+    margin-bottom: 10px;
+}
+
+.bolim-1 .box div h2 {
+    font-weight: 600;
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.bolim-1 .box div .p-1 {
+    font-weight: 300;
+    font-size: 18px;
+    color: grey;
+}
+
+.bolim-1 .box div .p-2 {
+    font-weight: 500;
+    font-size: 24px;
+    justify-content: end;
+    color: #FFFFFF;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 30px;
+    }
+    
+    nav p {
+        font-size: 15px;
+    }
+    
+    nav div {
+        gap: 10px;
+    }
+    
+    .til:nth-child(3) {
+        font-size: 9px;
+        padding: 9px 5px;
+        border-radius: 50%;
+    }
+
+    nav img {
+        width: 30px;
+    }
+    
+    .til:nth-child(1), .til:nth-child(2) {
+        font-size: 9px;
+        padding: 9px 5px;
+        border-radius: 50%;
+    }
+    
+    .logo {
+       width: 300px;
+    }
+     
+    .bolim-1 {
+        padding: 0 20px;
+        }
+        
+    .bolim-1 .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .bolim-1 .box div {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .onas {
+        height: 60px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 200px;
+    }
+        
+    .bolim-1 .box div:nth-child(1) img {
+        width: 250px;
+    }
+    
+    .bolim-1 .box div .son {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .bolim-1 .box div h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .bolim-1 .box div .p-1 {
+        font-size: 14px;
+    }
+    
+    .bolim-1 .box div .p-2 {
+        font-size: 14px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    }
+
+
+.bolim-2 {
+    width: 100%;
+    background-color: black;
+    padding: 80px;
+}
+
+.bolim-2 .p-1 {
+    font-weight: 300;
+    font-size: 18px;
+    color: grey;
+    margin-top: 20px;
+}
+
+.bolim-2 .boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 60px;
+}
+
+
+ .bolim-2 .box .img {
+    height: 200px;
+    background: url(./rasmlar/background-1.svg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 40px;
+} 
+
+.bolim-2 .box:nth-child(3) .img img {
+    height: 30px;
+}
+
+.bolim-2 .son {
+    font-weight: 600;
+    font-size: 32px;
+    color: #00D162;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .bolim-2 {
+       padding: 20px;
+    }
+    
+    .bolim-2 .p-1 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .bolim-2 .boxs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+        
+     .bolim-2 .box .img {
+        height: 150px;
+        width: 100%;
+        background: url(./rasmlar/background-1.svg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        line-height: 150px;
+        margin-bottom: 20px;
+    } 
+    
+    .bolim-2 .box:nth-child(3) .img img {
+        height: 20px;
+    }
+    
+    .bolim-2 .son {
+        font-weight: 600;
+        font-size: 18px;
+        color: #00D162;
+        margin-bottom: 10px;
+    }
+
+    .bolim-2 .img-2 {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+}
+
+.bolim-3 {
+    width: 100%;
+    background-color: black;
+    padding: 0 80px;
+    position: relative;
+}
+
+.bolim-3 .imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.bolim-3 .imgs img:nth-child(1) {
+    height: 80px;
+}
+
+.bolim-3 .aylanish {
+    position: relative;
+    padding-right: 10px;
+}
+
+.bolim-3 .aylanish img:nth-child(1) {
+    height: 200px;
+    animation-name: yurish;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bolim-3 .aylanish img:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 5px);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes yurish {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+.bolim-3 .maishiy-texnikalar {
+    margin-top: 40px;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 600px);
+    position: relative;
+}
+
+.bolim-3 .maishiy-texnikalar div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.bolim-3 .maishiy-texnikalar div{
+    position: relative;
+    background-color: #00D162;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.bolim-3 .maishiy-texnikalar div:nth-child(1) {
+    background: linear-gradient(180deg, #2FAC73 0%, #15171B 100%);
+}
+
+.bolim-3 .maishiy-texnikalar div:nth-child(2) {
+    background: linear-gradient(180deg, #96ABD8 0%, #15171B 100%);
+}
+
+.bolim-3 .maishiy-texnikalar div:nth-child(3) {
+    background: linear-gradient(180deg, #FB6169 0%, #15171B 100%);
+}
+
+.bolim-3 .maishiy-texnikalar div:nth-child(4) {
+    background: linear-gradient(180deg, #C994B6 0%, #15171B 100%);
+}
+
+.p-90deg {
+    position: absolute;
+    font-weight: 500;
+    font-size: 24px;
+    right: -60px;
+    top: 150px;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+.p-5 {
+    position: relative;
+    font-weight: 500;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+.p-4 {
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.p-3 {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .bolim-3 {
+        padding: 20px 20px 0 20px;
+    }
+
+    .bolim-3 .imgs {
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bolim-3 .imgs img:nth-child(1) {
+        height: 40px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    
+    .bolim-3 .aylanish {
+        position: relative;
+    }
+    
+    .bolim-3 .aylanish img:nth-child(1) {
+        position: relative;
+        right: 15px;
+        height: 100px;
+        animation-name: yurish;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .bolim-3 .aylanish img:nth-child(2) {
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 22px);
+        transform: translate(-50%, -50%);
+    }
+    
+     .bolim-3 .maishiy-texnikalar {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+    }
+    
+    .bolim-3 .maishiy-texnikalar div img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+    
+    .bolim-3 .maishiy-texnikalar div{
+        position: relative;
+        background-color: #00D162;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 300px;
+        width: 100%;
+    }
+    
+    .p-90deg {
+        position: absolute;
+        font-weight: 500;
+        font-size: 14px;
+        right: -45px;
+        top: 80px;
+        color: #FFFFFF;
+        transform: rotate(-90deg);
+    }
+    
+    .p-5 {
+        position: relative;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    
+    .p-4 {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+    
+    .p-3 {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: right;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+    
+}
+
+
+footer {
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    background-color: #15171B;
+    text-align: center;
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 400px;
+}
+
+.boglanish {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    text-align: start;
+    padding: 0 100px;
+}
+
+.boglanish div {
+    width: 400px;
+}
+
+.boglanish div span {
+    color: #00D162;
+}
+
+.p-6 {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: end;
+}
+
+@media (max-width: 500px) {
+    footer {
+        margin-top: 30px;
+        width: 100%;
+        height: 500px;
+        background-color: #15171B;
+        padding: 30px 0px;
+        overflow-x: hidden;
+        display: flex;
+        align-items: flex-start;
+        padding: 30px;
+    }
+    
+    footer img {
+        width: 300px;
+    }
+    
+    .boglanish {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+        
+    .p-6 {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+}
+
